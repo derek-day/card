@@ -1,0 +1,21 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Document
+    %link{href: "card.css", rel: "stylesheet"}/
+  %body
+    .cardContainer
+      .card{"data-tilt" => "", "data-tilt-glare" => "", "data-tilt-max-glare" => "0.8"}
+        .cardFront
+          %img{src: "card.png"}/
+          .cardShinePlusAfterElement
+          .card__glare
+    %script{src: "vanilla-tilt.js"}
+    :javascript
+      VanillaTilt.init(document.querySelector(".card"), {
+      	    	max: 25,
+      		    speed: 400
+      	    });
