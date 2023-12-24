@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="card.css">
-    <script src="jquery.js"></script>
 </head>
 <body>
     <!-- <div class="cardContainer">
@@ -25,6 +24,7 @@
             <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" /> -->
             <img src="card.png" class="cover-image" />
           </div>
+          <!--add parallax/extend from screen on character-->
           <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
           <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
         </div>
@@ -39,6 +39,13 @@
           <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
         </div>
       </a>
-
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+      </script>
+    
 </body>
 </html>
