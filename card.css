@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -32,6 +32,8 @@
     --bar-color: rgba(255, 255, 255, 0.6);
     --bar-bg: rgb(10, 10, 10);
     --radius: 4.55% / 3.5%;
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
 }
 
 .cardContainer {
@@ -95,16 +97,9 @@
     display: grid;
     grid-area: 1/1;
 }
- */
 
- :root {
-    --card-height: 300px;
-    --card-width: calc(var(--card-height) / 1.5);
-  }
-  * {
-    box-sizing: border-box;
-  }
-  body {
+
+ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -124,6 +119,15 @@
     perspective: 2500px;
     margin: 0 50px;
   }
+
+  .card {
+    --radius: 4.55% / 3.5%;
+    transform: translateZ(0.1px);
+    will-change: transform,visibility;
+    transform-style: preserve-3d;
+    width: 100%;
+    aspect-ratio: .714;
+}
   
   .cover-image {
     width: 100%;
