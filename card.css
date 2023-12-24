@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -95,60 +95,113 @@
     display: grid;
     grid-area: 1/1;
 }
+ */
 
-.reflection-container{
-    position:relative;
-    display:inline-block;
-    vertical-align:middle;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    &:before{
-      content:'Hover me ➜';
-      color:#fff;
-      position:absolute;
-      left:-1rem;
-      top:50%;
-      font-size:6vh;
-      transform:translateX(-100%) translateY(-50%);
-    }
-    .reflection-content{
-      height:80vh;
-      width:80vh;
-      background:#000 url(https://unsplash.it/800/800/?random);
-      background-size:cover;
-      background-position:center;
-      transform:rotateX(0) rotateY(0);
-      pointer-events:none;
-      transition:100ms linear transform;
-      overflow:hidden;
-      &:before{
-        content:'';
-        position:absolute;
-        width:200%;
-        height:200%;
-        left:-50%;
-        top:-50%;
-        background: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.2));
-      }
-    }
-    .reflection-grid-cell{
-      position:absolute;
-      z-index: 1;
-      width:10%;
-      height:10%;
-    }
-    @for $r from 1 to 11{ 
-      @for $c from 1 to 11 {
-        .reflection-grid-cell-#{( ($r*10) + $c - 10)}{
-          top:($r*10%)-10%;
-          left:($c*10%)-10%;
-        }
-        .reflection-grid-cell-#{( ($r*10) + $c - 10)}:hover ~ .reflection-content{
-          transform:rotateX((($r*-5)+25deg)) rotateY((-25deg+($c*5)));
-          &:before{
-            transform:translateY(25-(5%*$r));
-          }
-        }
-      }
-    }
+ :root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
   }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191c29;
+  }
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  .wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  .wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .card:hover .wrapper::before,
+  .wrapper::after {
+    opacity: 1;
+  }
+  
+  .card:hover .wrapper::after {
+    height: 120px;
+  }
+  .title {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .card:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+  }
+  
+  .character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+  

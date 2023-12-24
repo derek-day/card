@@ -5,24 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="card.css">
+    <script src="jquery.js"></script>
 </head>
 <body>
-    <div class="cardContainer">
-        <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="card">
+    <!-- <div class="cardContainer">
+        <div class="card">
             <div class="cardFront">
                 <img src="card.png" />
                 <div class="cardShinePlusAfterElement"></div>
                 <div class="card__glare"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <script src="vanilla-tilt.js"></script>
-    <script>
-    	VanillaTilt.init(document.querySelector(".card"), {
-	    	max: 25,
-		    speed: 400
-	    });
-    </script>
+    <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+        <div class="card">
+          <div class="wrapper">
+            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
+          </div>
+          <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
+          <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+        </div>
+      </a>
+      
+      <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+        <div class="card">
+          <div class="wrapper">
+            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+          </div>
+          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+        </div>
+      </a>
+
 </body>
 </html>
