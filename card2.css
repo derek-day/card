@@ -47,8 +47,10 @@
     --radius: 4.55% / 3.5%;
     --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
-
-  }
+    --mask: url(https://poke-holo.b-cdn.net/foils/swsh12/masks/upscaled/085_foil_holo_reverse_2x.webp);
+    --foil: url(https://poke-holo.b-cdn.net/foils/swsh12/foils/upscaled/085_foil_holo_reverse_2x.webp);
+    --foil-brightness: 0.55;
+  }  
   
   .cardShinePlusAfterElement {
     --space: 5%;
