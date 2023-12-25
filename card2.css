@@ -2,17 +2,17 @@
     --color1: rgb(0, 231, 255);
     --color2: rgb(255, 0, 231);
     --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-    --charizard1: #fac;
-    --charizard2: #ddccaa;
+    --charizard1: #54a29e;
+    --charizard2: #a79d66;
     /* --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp); */
-    --charizardfront: url("test.png");
-    --pika1: #54a29e;
-    --pika2: #a79d66;
+    --charizardfront: url("god.webp");
+    --pika1: #efb2fb;
+    --pika2: #acc6f8;
     /* --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp); */
-    --pikafront: url("testcard.png");
+    --pikafront: url("bbb.png");
     --eevee1: #efb2fb;
     --eevee2: #acc6f8;
-    --eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
+    --eeveefront: url("cc.png");
     --mewtwo1: #efb2fb;
     --mewtwo2: #acc6f8;
     --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
