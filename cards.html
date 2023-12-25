@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
+  <a href="cards2.html">cards2</a>
+
     <!-- <div class="cardContainer">
-        <div class="card">
+        <div class="card card1">
             <div class="cardFront">
                 <img src="card.png" />
                 <div class="cardShinePlusAfterElement"></div>
@@ -20,7 +22,7 @@
     <!-- change this to javascript to view on hover on mobile use-->
     <a  alt="Mythrill" target="_blank">
       <div class="cardContainer">
-        <div class="card">
+        <div class="card card2">
             <div class="cardFront wrapper">
                 <img src="card.png" />
                 <div class="cardShinePlusAfterElement"></div>
@@ -54,7 +56,11 @@
       </a>
       <script type="text/javascript" src="vanilla-tilt.js"></script>
       <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".card"), {
+        VanillaTilt.init(document.querySelector(".card1"), {
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelector(".card2"), {
             max: 25,
             speed: 400
         });
