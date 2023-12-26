@@ -2,18 +2,27 @@
     --color1: rgb(0, 231, 255);
     --color2: rgb(255, 0, 231);
     --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-    --charizard1: #54a29e;
-    --charizard2: #a79d66;
-    --charizardfront: url("assets/images/kid.png");
-    --pika1: #efb2fb;
-    --pika2: #acc6f8;
-    --pikafront: url("assets/images/archie.png");
-    --eevee1: #efb2fb;
-    --eevee2: #acc6f8;
-    --eeveefront: url("assets/images/trogg.png");
-    --mewtwo1: #efb2fb;
-    --mewtwo2: #acc6f8;
-    --mewtwofront: url("assets/images/moony.png");
+    /* --kid1: #54a29e;
+    --kid2: #a79d66; */
+    --kid1: #359AB9;
+    --kid2: #FCDD9E;
+    --kidfront: url("assets/images/kid.png");
+    --archie1: #3B656D;
+    --archie2: #C7E7DF;
+    --archiefront: url("assets/images/archie.png");
+    --trogg1: #2F3147;
+    --trogg2: #687C01;
+    --troggfront: url("assets/images/trogg.png");
+    --moony1: #475C2F;
+    --moony2: #8B8C81;
+    --moonyfront: url("assets/images/moony.png");
+    --angel1: #383D51;
+    --angel2: #83478C;
+    --angelfront: url("assets/images/angel.png");
+    --dm1: #352496;
+    --dm2: #BE7AFD;
+    --dmfront: url("assets/images/dm.png");
+
 
     --glow: #69d1e9;
     --radius: 4.55% / 3.5%;
@@ -46,9 +55,6 @@
     --radius: 4.55% / 3.5%;
     --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
-    --mask: url(https://poke-holo.b-cdn.net/foils/swsh12/masks/upscaled/085_foil_holo_reverse_2x.webp);
-    --foil: url(https://poke-holo.b-cdn.net/foils/swsh12/foils/upscaled/085_foil_holo_reverse_2x.webp);
-    --foil-brightness: 0.55;
   }  
 
   .front {
@@ -159,29 +165,52 @@
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
   
-  .card.charizard {
-    --color1: var(--charizard1);
-    --color2: var(--charizard2);
-    --front: var(--charizardfront);
+  .card.kid {
+    --color1: var(--kid1);
+    --color2: var(--kid2);
+    --front: var(--kidfront);
   }
-  .card.pika {
-    --color1: var(--pika1);
-    --color2: var(--pika2);
-    --front: var(--pikafront);
+  .card.archie {
+    --color1: var(--archie1);
+    --color2: var(--archie2);
+    --front: var(--archiefront);
   }
-  .card.mewtwo {
-    --color1: var(--mewtwo1);
-    --color2: var(--mewtwo2);
-    --front: var(--mewtwofront);
+  .card.trogg {
+    --color1: var(--trogg1);
+    --color2: var(--trogg2);
+    --front: var(--troggfront);
   }
-  .card.eevee {
+  .card.moony {
+    /* --color1: #ec9bb6;
+    --color2: #ccac6f;
+    --color3: #69e4a5;
+    --color4: #8ec5d6;
+    --color5: #b98cce; */
+    --color1: var(--moony1);
+    --color2: var(--moony2);
+    --front: var(--moonyfront);
+  }
+  .card.angel {
     --color1: #ec9bb6;
     --color2: #ccac6f;
     --color3: #69e4a5;
     --color4: #8ec5d6;
     --color5: #b98cce;
-    --front: var(--eeveefront);
+    --color1: var(--angel1);
+    --color2: var(--angel2);
+    --front: var(--angelfront);
   }
+  .card.dm {
+    --color1: #ec9bb6;
+    --color2: #ccac6f;
+    --color3: #69e4a5;
+    --color4: #8ec5d6;
+    --color5: #b98cce;
+    --color1: var(--dm1);
+    --color2: var(--dm2);
+    --front: var(--dmfront);
+  }
+
   
   .card:before,
   .card:after {
