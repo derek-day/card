@@ -74,7 +74,7 @@
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    margin: 0 37%;
+    margin: 0 10%;
    }
   
   .cardShinePlusAfterElement {
@@ -493,16 +493,16 @@ p {
   }
 
   .section2 {
-    margin:6rem 37%;
+    margin:6rem 10%;
   }
 
   @media screen and (max-width: 599px) {
     .desk {
-      /* display: none; */
+      display: none;
     }
 
     .mob {
-      /* display: flex; */
+      display: flex;
       margin: 0 20px;
     }
 
@@ -515,7 +515,7 @@ p {
     }
 
     .background {
-      height: 300%;
+      height: 370%;
     }
   }
   
@@ -525,15 +525,15 @@ p {
     }
 
     .desk {
-      /* flex-direction: row; */
+      flex-direction: row;
     }
 
     .mob {
-      /* display: none; */
+      display: none;
     }
 
     .background {
-      height: 300%;
+      height: 170%;
     }
   }
   
