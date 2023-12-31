@@ -2,19 +2,26 @@
     --color1: rgb(0, 231, 255);
     --color2: rgb(255, 0, 231);
     --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-    --solace1: #359AB9;
-    --solace2: #FCDD9E;
-    --solacefront: url("assets/images/solace.webp");
-    --merg1: #9bc8ca;
-    --merg2: #dcd5d6;
-    --mergfront: url("assets/images/merg.webp");
-    --nil1: #c9c1c0;
-    --nil2: #1d1e27;
-    --nilfront: url("assets/images/nil.webp");
+    --kid1: #359AB9;
+    --kid2: #FCDD9E;
+    --kidfront: url("assets/images/kid.webp");
+    --archie1: #9bc8ca;
+    --archie2: #dcd5d6;
+    --archiefront: url("assets/images/archie.webp");
+    --trogg1: #c9c1c0;
+    --trogg2: #1d1e27;
+    --troggfront: url("assets/images/trogg.webp");
     --dm1: #d2d2d8;
     --dm2: #2a3539;
     --dm3: #75ccd4;
-    --dmfront: url("assets/images/cryo.webp");
+    --dmfront: url("assets/images/dm.webp");
+    --angel1: #9bc8ca;
+    --angel2: #dcd5d6;
+    --angelfront: url("assets/images/angel.webp");
+    --moony1: #c9c1c0;
+    --moony2: #1d1e27;
+    --moonyfront: url("assets/images/moony.webp");
+
 
 
     --glow: #69d1e9;
@@ -168,25 +175,36 @@
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
   
-  .card.solace {
-    --color1: var(--solace1);
-    --color2: var(--solace2);
-    --front: var(--solacefront);
+  .card.kid {
+    --color1: var(--kid1);
+    --color2: var(--kid2);
+    --front: var(--kidfront);
   }
-  .card.merg {
-    --color1: var(--merg1);
-    --color2: var(--merg2);
-    --front: var(--mergfront);
+  .card.archie {
+    --color1: var(--archie1);
+    --color2: var(--archie2);
+    --front: var(--archiefront);
   }
-  .card.nil {
-    --color1: var(--nil1);
-    --color2: var(--nil2);
-    --front: var(--nilfront);
+  .card.trogg {
+    --color1: var(--trogg1);
+    --color2: var(--trogg2);
+    --front: var(--troggfront);
   }
   .card.dm {
     --color1: #efb2fb;
     --color2: #acc6f8;
+    --color3: var(--dm3);
     --front: var(--dmfront);
+  }
+  .card.angel {
+    --color1: var(--angel1);
+    --color2: var(--angel2);
+    --front: var(--angelfront);
+  }
+  .card.moony {
+    --color1: var(--moony1);
+    --color2: var(--moony2);
+    --front: var(--moonyfront);
   }
 
   
