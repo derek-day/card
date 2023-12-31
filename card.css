@@ -2,26 +2,19 @@
     --color1: rgb(0, 231, 255);
     --color2: rgb(255, 0, 231);
     --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-    /* --kid1: #54a29e;
-    --kid2: #a79d66; */
-    --kid1: #359AB9;
-    --kid2: #FCDD9E;
-    --kidfront: url("assets/images/kid.webp");
-    --archie1: #3B656D;
-    --archie2: #C7E7DF;
-    --archiefront: url("assets/images/archie.webp");
-    --trogg1: #2F3147;
-    --trogg2: #687C01;
-    --troggfront: url("assets/images/trogg.webp");
-    --moony1: #475C2F;
-    --moony2: #8B8C81;
-    --moonyfront: url("assets/images/moony.webp");
-    --angel1: #383D51;
-    --angel2: #83478C;
-    --angelfront: url("assets/images/angel.webp");
-    --dm1: #352496;
-    --dm2: #BE7AFD;
-    --dmfront: url("assets/images/dm.webp");
+    --solace1: #359AB9;
+    --solace2: #FCDD9E;
+    --solacefront: url("assets/images/solace.webp");
+    --merg1: #9bc8ca;
+    --merg2: #dcd5d6;
+    --mergfront: url("assets/images/merg.webp");
+    --nil1: #c9c1c0;
+    --nil2: #1d1e27;
+    --nilfront: url("assets/images/nil.webp");
+    --dm1: #d2d2d8;
+    --dm2: #2a3539;
+    --dm3: #75ccd4;
+    --dmfront: url("assets/images/cryo.webp");
 
 
     --glow: #69d1e9;
@@ -74,7 +67,7 @@
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    margin: 0 75px;
+    margin: 0 37%;
    }
   
   .cardShinePlusAfterElement {
@@ -175,44 +168,22 @@
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
   
-  .card.kid {
-    --color1: var(--kid1);
-    --color2: var(--kid2);
-    --front: var(--kidfront);
+  .card.solace {
+    --color1: var(--solace1);
+    --color2: var(--solace2);
+    --front: var(--solacefront);
   }
-  .card.archie {
-    --color1: var(--archie1);
-    --color2: var(--archie2);
-    --front: var(--archiefront);
+  .card.merg {
+    --color1: var(--merg1);
+    --color2: var(--merg2);
+    --front: var(--mergfront);
   }
-  .card.trogg {
-    --color1: var(--trogg1);
-    --color2: var(--trogg2);
-    --front: var(--troggfront);
-  }
-  .card.moony {
-    /* --color1: #ec9bb6;
-    --color2: #ccac6f;
-    --color3: #69e4a5;
-    --color4: #8ec5d6;
-    --color5: #b98cce; */
-    --color1: var(--moony1);
-    --color2: var(--moony2);
-    --front: var(--moonyfront);
-  }
-  .card.angel {
-    /* --color1: var(--angel1);
-    --color2: var(--angel2); */
-        --color1: #ec9bb6;
-    --color2: #ccac6f;
-    --color3: #69e4a5;
-    --color4: #8ec5d6;
-    --color5: #b98cce;
-    --front: var(--angelfront);
+  .card.nil {
+    --color1: var(--nil1);
+    --color2: var(--nil2);
+    --front: var(--nilfront);
   }
   .card.dm {
-    /* --color1: var(--dm1);
-    --color2: var(--dm2); */
     --color1: #efb2fb;
     --color2: #acc6f8;
     --front: var(--dmfront);
@@ -383,22 +354,20 @@
   
   
   
-  .card.angel:hover {
+  .card.dm:hover {
     box-shadow: 
       0 0 30px -5px white,
       0 0 10px -2px white,
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
-  .card.angel:hover:before,
-  .card.angel.active:before {
+  .card.dm:hover:before,
+  .card.dm.active:before {
     background-image: linear-gradient(
       115deg,
       transparent 20%,
-      var(--color1) 36%,
-      var(--color2) 43%,
-      var(--color3) 50%,
-      var(--color4) 57%,
-      var(--color5) 64%,
+      var(--dm1) 36%,
+      var(--dm2) 50%,
+      var(--dm3) 64%,
       transparent 80%
     );
   }
@@ -506,21 +475,29 @@ p {
   }
 
   .section2 {
-    margin:6rem 75px;
+    margin:6rem 37%;
   }
 
   @media screen and (max-width: 599px) {
     .desk {
-      display: none;
+      /* display: none; */
     }
 
     .mob {
-      display: flex;
+      /* display: flex; */
       margin: 0 20px;
     }
 
+    .glass {
+      margin: 0 7%;
+    }
+
+    .section2 {
+      margin: 6rem 7%;
+    }
+
     .background {
-      height: 370%;
+      height: 300%;
     }
   }
   
@@ -530,15 +507,15 @@ p {
     }
 
     .desk {
-      flex-direction: row;
+      /* flex-direction: row; */
     }
 
     .mob {
-      display: none;
+      /* display: none; */
     }
 
     .background {
-      height: 160%;
+      height: 300%;
     }
   }
   
